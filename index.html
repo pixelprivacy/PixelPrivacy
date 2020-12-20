@@ -15,7 +15,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
-    <body id="page-top" >
+    <body id="page-top" class="bg-light">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
@@ -26,10 +26,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#algorithms">Algorithms</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,119 +43,10 @@
                 </div>
             </div>
         </header>
-        <!-- Gallery-->
-        <section class="gallery-section text-center bg-light" id="gallery">
-            <div class="container">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-black mb-4">Gallery</h2>
-                        <a href="gallery.html">Our gallery</a>
-                        contains a large amount of photos processed by all the algorithms used
-                        in this project. It is very nice go visit please.
-                </div>
-                <div class="row no-gutters mt-5">
-                    <div class="col-lg-6">
-                        <a href="/gallery.html">
-                            <div class="tile" href="#">
-                                <img src="assets/img/gallery_0.jpg"/>
-                                <a class="details">
-                                    <span class="title">Lorem Ipsum Dolor</span>
-                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
-                                </a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="/gallery.html">
-                            <div class="tile" href="#">
-                                <img src="assets/img/gallery_1.jpg"/>
-                                <a class="details">
-                                    <span class="title">Lorem Ipsum Dolor</span>
-                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
-                                </a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="/gallery.html">
-                            <div class="tile" href="#">
-                                <img src="assets/img/gallery_2.jpg"/>
-                                <a class="details">
-                                    <span class="title">Lorem Ipsum Dolor</span>
-                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
-                                </a>
-                            </div>
-                        </a> 
-                    </div>
-                    <div class="col-lg-6">
-                        <a href="/gallery.html">
-                            <div class="tile" href="#">
-                                <img src="assets/img/gallery_3.jpg"/>
-                                <a class="details">
-                                    <span class="title">Lorem Ipsum Dolor</span>
-                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
-                                </a>
-                            </div>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Algorithms-->
-        <section class="projects-section text-center bg-light" id="algorithms">
-            <div class="container">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="text-black mb-4">Algorithms</h2>
-                        This section contains overviews and links to the algorithms
-                        page containing further info about algorithms used in this project.
-                </div>
-                <!-- Featured Project Row 
-                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.png" width='300' alt="" /></div>
-                    <div class="col-xl-4 col-lg-5">
-                        <div class="featured-text text-center text-lg-left">
-                            <h4>Showcase</h4>
-                            <p class="text-black-50 mb-0">This can be used to showcase something specific. It came with the website so maybe we can find some use.</p>
-                        </div>
-                    </div>
-                </div>-->
-                <!-- Project One Row-->
-                <div class="row justify-content-center no-gutters mt-5 mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="text-center h-100 project">
-                            <div class="d-flex h-100 pl-5">
-                                <div class="project-text-right w-100 my-auto text-lg-left">
-                                    <a href="/algorithms.html" style="text-decoration: none">
-                                        <h4 class="text-black">Algorithm A</h4>
-                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row justify-content-center no-gutters">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="text-center h-100 project">
-                            <div class="d-flex h-100 pr-5">
-                                <div class="project-text-left w-100 my-auto text-lg-right">
-                                    <a href="/algorithms.html" style="text-decoration: none">
-                                        <h4 class="text-black">Algorithm B</h4>
-                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- About section -->
-        <section class="about-section text-center bg-light" id="about">  
+        <section class="about-section text-center bg-light mt-4" id="about">  
             <div class="container">
-                <div class="col-lg-8 mx-auto mb-4">
+                <div class="col-lg-8 mx-auto mb-4 mt-4">
                     <h2 class="text-black mb-4">About</h2>
                         This in an about section which talks about who started the project and where it's taking place. 
                 </div>
@@ -182,64 +73,166 @@
                 </div>
             </div>
         </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
+        <!-- Gallery-->
+        <section class="gallery-section text-center bg-light mt-4" id="gallery">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Want to know more? </h2>
-                        <form class="form-inline d-flex">
-                            <button class="btn btn-primary mx-auto" type="submit"><a href = "mailto: abc@example.com" style="color:white">Send Email</a></button>
-                        </form>
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-black mb-4 mt-4">Gallery</h2>
+                        <a href="/Website/gallery.html">Our gallery</a>
+                        contains a large amount of photos processed by all the algorithms used
+                        in this project. It is very nice go visit please.
+                </div>
+                <div class="row no-gutters mt-5">
+                    <div class="col-lg-6">
+                        <a href="/Website/gallery.html">
+                            <div class="tile" href="#">
+                                <img src="assets/img/gallery_0.jpg"/>
+                                <a class="details" href="/Website/gallery.html">
+                                    <span class="title">Lorem Ipsum Dolor</span>
+                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                </a>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="/Website/gallery.html">
+                            <div class="tile" href="#">
+                                <img src="assets/img/gallery_1.jpg"/>
+                                <a class="details" href="/Website/gallery.html">
+                                    <span class="title">Lorem Ipsum Dolor</span>
+                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                </a>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="/Website/gallery.html">
+                            <div class="tile" href="#">
+                                <img src="assets/img/gallery_2.jpg"/>
+                                <a class="details" href="/Website/gallery.html">
+                                    <span class="title">Lorem Ipsum Dolor</span>
+                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                </a>
+                            </div>
+                        </a> 
+                    </div>
+                    <div class="col-lg-6">
+                        <a href="/Website/gallery.html">
+                            <div class="tile" href="#">
+                                <img src="assets/img/gallery_3.jpg"/>
+                                <a class="details" href="/Website/gallery.html">
+                                    <span class="title">Lorem Ipsum Dolor</span>
+                                    <span class="info">Quisque vel felis lectus donec vitae dapibus magna</span>
+                                </a>
+                            </div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Algorithms-->
+        <section class="projects-section text-center bg-light mt-4" id="algorithms">
+            <div class="container">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-black mb-4">Algorithms</h2>
+                        This section contains overviews and links to the algorithms
+                        page containing further info about algorithms used in this project.
+                </div>
+                <!-- Featured Project Row 
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.png" width='300' alt="" /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Showcase</h4>
+                            <p class="text-black-50 mb-0">This can be used to showcase something specific. It came with the website so maybe we can find some use.</p>
+                        </div>
+                    </div>
+                </div>-->
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mt-5 mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100 pl-5">
+                                <div class="project-text-right w-100 my-auto text-lg-left">
+                                    <a href="/Website/algorithms.html" style="text-decoration: none">
+                                        <h4 class="text-black">PERC</h4>
+                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100 pr-5">
+                                <div class="project-text-left w-100 my-auto text-lg-right">
+                                    <a href="/Website/algorithms.html" style="text-decoration: none">
+                                        <h4 class="text-black">PIRE</h4>
+                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact-->
-        <section class="contact-section bg-black">
+        <section class="contact-section bg-light mt-4" id="contact">
             <div class="container">
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-3x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Want to contact us? </h2>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-6 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Address</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50">Houtlaan 4, 6525 XZ Nijmegen NL</div>
+                                <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-2">Email</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50"><a>
+                                    Martha Larson <br>
+                                    m.larson@cs.ru.nl <br>
+                                    Institute for Computing and Information Sciences, Faculty of Science <br>
+                                    Radboud University <br>
+                                    Nijmegen, Netherlands</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
+                    <div class="col-md-6 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
-                                <i class="fas fa-envelope text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Email</h4>
-                                <hr class="my-4" />
-                                <div class="small text-black-50"><a>hello@yourdomain.com</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-3 mb-md-0">
-                        <div class="card py-4 h-100">
-                            <div class="card-body text-center">
-                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Phone</h4>
-                                <hr class="my-4"/>
-                                <div class="small text-black-50">+1 (555) 902-8832</div>
+                                <i class="fas fa-map-marked-alt fa-2x text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-2">Address</h4>
+                                <hr class="my-3" />
+                                <div class="medium text-black-50 mt-4">
+                                    Toernooiveld 212 <br>
+                                    6525 EC Nijmegen <br>
+                                    Netherlands
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="https://www.youtube.com/watch?v=zShHPVOA070"><i class="fab fa-youtube"></i></a>
+                    <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> --> 
+                    <!-- <a class="mx-2" href="https://www.youtube.com/watch?v=zShHPVOA070"><i class="fab fa-youtube"></i></a> -->
                     <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
                 </div>
             </div>
+            <!-- Footer-->
+            <div class="footer small text-center text-white">
+                <div class="container">Copyright © Pixel Privacy Project 2020</div>
+            </div>
         </section>
-        <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Your Website 2020</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
