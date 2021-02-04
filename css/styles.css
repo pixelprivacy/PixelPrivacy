@@ -9918,6 +9918,10 @@ button.bg-black:focus {
   color: #fff !important;
 }
 
+.text-lightgray {
+  color: #e6e6e6 !important;
+}
+
 .text-primary {
   color: #494f54 !important;
 }
@@ -10523,4 +10527,3 @@ body {
   100% {
     width: 50%;
   }
-}
