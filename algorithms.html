@@ -152,31 +152,25 @@
             <div class="container">
                 <div class="col-lg-8 mx-auto text-white">
                     <h1 class="text-white mb-5 mt-5">Algorithms</h1>
-                        This page contains a very nice and detailed description of the
+                        This page contains a short description of the
                         algorithms used in this project, as well as amazing sliding 
-                        comparisons of the original and filtered images.
+                        comparisons of the original and filtered images. If you want to know the full mechanisms, go to the paper or repository using the buttons below each description.
                 </div>
+    
                 <div class="row no-gutters mt-5">
-                    <div class="col-lg-6">
-                        <div class="img-comp-container">
-                          <div class="img-comp-img">
-                            <img src="assets/img/gallery_0.jpg" width="600" height="600">
-                          </div>
-                          <div class="img-comp-img img-comp-overlay">
-                            <img src="assets/img/gallery_0_edit.jpg" width="600" height="600">
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 pl-5 pr-5 text-white" align="justify">
-                       <h2 class="text-white mb-4 mt-4" align="center">CBIR - what do we battle?</h2>
-                        Content bases information retrieval systems (CBIR) accept images as an input and a question similar to: what do you see on this picture? The systems returns a list of relevant images as an answer. That input image is represented in a vector that is based on the content of an image. You can consider this vector a numerical “fingerprint” of what is displayed on the image. A CBIR system then compares that vector to content based vectors of other images in a database and selects the most similar vectors as images that have something similar or something to do with the original image.
-                    </div>
-                </div>
-                <div class="row no-gutters mt-5">
-                    <div class="col-lg-6 pl-5 pr-5 text-white" align="justify">
+                    <div class="col-lg-6 pl-5 pr-5 text-white" align="justify"><section id="PIRE">
                        <h2 class="text-white mb-4 mt-4" align="center">PIRE</h2>
-                       Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the process of vector comparisons by perturbating the pixels of the original image. That way the vector of the original image is altered and does not resemble its actual “fingerprint” anymore. Similar vectors in the database are now similar to the “fake” fingerprint instead of the “real” fingerprint and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the original image. Since the perturbation happens on a pixel level, human eyes won’t recognise a perturbated image when they see one, but computers get confused and won’t be able to extract content anymore.
+                       Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the process of vector comparisons by altering the pixels of the original image. That way the vector of the original image is changed and does not resemble its actual “fingerprint” anymore. Similar vectors in the database are now similar to the “fake” fingerprint instead of the “real” fingerprint and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the original image. Since the alteration happens on a pixel level, human eyes won’t recognise an altered image when they see one, but computers get confused and won’t be able to extract content anymore.
+                        
+                        <div class="social d-flex justify-content-center">
+                            <a class="mx-2" href="https://github.com/liuzrcc/pire"><i class="fab fa-github"></i></a>
+                            <a class = "mx-2" href = "https://arxiv.org/pdf/1901.10332.pdf"><i class="far fa-file-alt"></i>
+                                </a>
+                        </div>
+                        </section>
                     </div>
+                    
+                     
                     <div class="col-lg-6">
                         <div class="img-comp-container">
                           <div class="img-comp-img">
@@ -186,6 +180,7 @@
                             <img src="assets/img/gallery_0_edit.jpg" width="600" height="600">
                           </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="row no-gutters mt-5">
@@ -199,22 +194,27 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 pl-5 pr-5 text-white text-align" align="justify">
+                    <div class="col-lg-6 pl-5 pr-5 text-white text-align" align="justify"><section id="PERC">
                        <h2 class="text-white mb-4 mt-4" align="center">PERC</h2>
-                        PerC perturbs images with respect to perceptual colour by minimizing the colour difference and maximizing the adversarial effect which is measured through misclassification. The higher the adversarial effect, the more unrecognisable an image becomes for a computer. The trick here is to make an image as unrecognisable for a computer as possible, without making it unrecognisable or “ugly” for the human eye. One of the main benefits of using PerC perturbations is that the changes in colour are less perceptible, especially in smooth regions of saturated colour. On top of that, PerC is able to hide large perturbations in the RGB space. The RGB space is the whole spectrum of colours described in proportions of red, green and blue. This game of hide and seek within the RGB space results in modifications of colours that are not readily noticeable for the human eye and alterations stay hidden for computersystems.
+                        PerC alters images with respect to perceptual colour by minimizing the colour difference and maximizing the adversarial effect which is measured through misclassification. The higher the adversarial effect, the more unrecognisable an image becomes for a computer. The trick here is to make an image as unrecognisable for a computer as possible, without making it unrecognisable or “ugly” for the human eye. This distance measurement was chosen through the results of a user study that showed how far apart colours could be before changes became noticed. One of the many benefits of using PerC perturbations is that the changes in colour are less perceptible, especially in smooth regions of saturated colour. On top of that, PerC is able to hide large perturbations in the RGB space. The RGB space is the whole spectrum of colours described in proportions of red, green and blue. This game of hide and seek within the RGB space results in modifications of colours that are not readily noticeable for the human eye and alterations stay hidden for computersystems. And the best part? You can use PerC in combination with other algorithms and filters to even make it more difficult for CBIRs to infer information from your picture. 
+                        
+                        
+                        
+                        
+                        <div class="social d-flex justify-content-center">
+                            <a class="mx-2" href="https://github.com/ZhengyuZhao/PerC-Adversarial"><i class="fab fa-github"></i>
+                                </a>
+                           <a class = "mx-2" href = "https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhao_Towards_Large_Yet_Imperceptible_Adversarial_Image_Perturbations_With_Perceptual_Color_CVPR_2020_paper.pdf"><i class="far fa-file-alt"></i>
+                                </a>
+                            
                     </div>
+                    </section>
                 </div>
             </div>
-        </section>
+        
 
         <!-- Contact-->
         <section class="contact-section" style="background-image: none">
-            <div class="container">
-                <div class="social d-flex justify-content-center">
-                    <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a> -->
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>
             </div>
         </section>
         <!-- Footer-->

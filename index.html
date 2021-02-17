@@ -39,16 +39,33 @@
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-left">
                     <h1 class="mx-auto my-0 text-uppercase">Pixel Privacy Project</h1>
-                    <h2 class="text-white mt-5 mb-5">A small description of the project and how your privacy is at risk.</h2>
+                    <h2 class="text-white mt-5 mb-5">Using image enhancement technology to protect user privacy</h2>
                 </div>
             </div>
         </header>
         <!-- About section -->
-        <section class="about-section text-center bg-light mt-4" id="about">  
+        <section class="about-section text-center bg-light mt-4"  id="about">  
             <div class="container">
-                <div class="col-lg-8 mx-auto mb-4 mt-4">
-                    <h2 class="text-black mb-4">About</h2>
-                        This in an about section which talks about who started the project and where it's taking place. 
+                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify">
+                    <h2 class="text-black mb-4" align = "center">About</h2>
+                        The pixel privacy project develops image enhancement technology that helps to protect user privacy. Specifically, it is dedicated to creating new approaches that invisibly change or visibly enhance images in such a way that it is no longer possible to automatically extract privacy-sensitive information. The methods proposed, PIRE and PERC, are two algorithms that change the structure of the pixels which creates a new image. This new image won't differ semantically in the human eye, but cannot be used for purposes users did not intend on when posting the picture online. By doing so protecting the users privacy
+                    
+                    <!-- HI - IMPORTANT!!! YOU WROTE HERE: section about who started the project and where it takes place. Do we know this? or do we just let them put that in? I took the inspiration for above text from Zhuoran's github on the pixel privacy task for Mediaville. -->
+                    
+                </div>
+                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify" >
+                    <h2 class="text-black mb-4" align="center">What do we battle?</h2>
+                    
+                                       In this era of social media, a lot of people post pictures online. Their intentions is to share their life with friends and followers. These images however can be used by content retrieval computersystems to extract data the user did not intent to share. Think of data on security systems, locations, what colour clothing one wears frequently. How does that work? Content based information retrieval systems (CBIR) accept images as an input and ask a question similar to: what do you see on this picture? The system returns a list of relevant and similar images as an answer to that question. The input image is represented in a vector that is based on the content of an image. You can consider this vector a numerical “fingerprint” of what is displayed on the image. A CBIR system then compares that vector to content based vectors of other images in a database and selects the most similar vectors as images that have something similar or something to do with the original image. An example: you post a picture of yourself in front of the Stevens Church in Nijmegen, wearing a red dress at noon. The CBIR takes that as input, asks the question: what do you see on this picture. It compares the fingerprints of the picture with images in its database, returning a list of pictures from the Sint Stevens church, Nijmegen, red dresses and lunchtime. Before you know it, the system shows you advertisements of lunchrooms in Nijmegen close to the Sint Stevens church and advices you to wear a red dress to another meeting. Not really what you expected from posting the "innocent" instagram picture. 
+                    
+                     
+                    <!-- HI - IMPORTANT!!! YOU WROTE HERE: section about who started the project and where it takes place. Do we know this? or do we just let them put that in? I took the inspiration for above text from Zhuoran's github on the pixel privacy task for Mediaville. Also, I added an example on the red dress (Matrix reference :p ) let me know what you think  -->
+                    
+                </div>
+                
+                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify" >
+                    <h2 class="text-black mb-4" align="center">The website</h2>
+                        On this website you can find examples of the beautiful images we created using image enhancement techniques that also assure user privacy. You can wander around the gallery and be amazed by the beautiful pictures. If you got curious to how we did it, you can have a look at the algorithms page. We described the mechanisms behind each filter using understandable language. And if you really want to dive deep and explore the technical details, you can find links to the published papers on each algorithm and the github repository where you can study the code. In the contact section you can find who to contact if you have questions, want a collaboration or want to have a nice chat on this topic!  
                 </div>
                 <!-- Map -->
                 <div id="map">
@@ -148,22 +165,6 @@
                         </div>
                     </div>
                 </div>-->
-                <!-- Project One Row-->
-                <div class="row justify-content-center no-gutters mt-5 mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="text-center h-100 project">
-                            <div class="d-flex h-100 pl-5">
-                                <div class="project-text-right w-100 my-auto text-lg-left">
-                                    <a href="/Website/algorithms.html" style="text-decoration: none">
-                                        <h4 class="text-black">CBIR</h4>
-                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <!-- Project Two Row-->
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
@@ -171,9 +172,9 @@
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100 pr-5">
                                 <div class="project-text-left w-100 my-auto text-lg-right">
-                                    <a href="/Website/algorithms.html" style="text-decoration: none">
+                                    <a href="/algorithms.html#PIRE" style="text-decoration: none">
                                         <h4 class="text-black">PIRE</h4>
-                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
+                                        <p class="mb-0 text-black-50">PIRE changes the images "fingerprint" so a CBIR cannot use that fingerprint to find similar images. Click to find out more!</p>
                                     </a>
                                 </div>
                             </div>
@@ -186,9 +187,9 @@
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100 pl-5">
                                 <div class="project-text-right w-100 my-auto text-lg-left">
-                                    <a href="/Website/algorithms.html" style="text-decoration: none">
+                                    <a href="/algorithms.html#PERC" style="text-decoration: none">
                                         <h4 class="text-black">PERC</h4>
-                                        <p class="mb-0 text-black-50">An overview of what the algorithm does and how it works this is text to fill the description because otherwise it was way too short.</p>
+                                        <p class="mb-0 text-black-50">PerC alters images with respect to the perceptual colour so the image looks the same to humans but different to a CBIR. Click here to find out more! </p>
                                     </a>
                                 </div>
                             </div>
