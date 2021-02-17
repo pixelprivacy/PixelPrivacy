@@ -162,7 +162,7 @@
                        <h2 class="text-white mb-4 mt-4" align="center">PIRE</h2>
                        Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the process of vector comparisons by altering the pixels of the original image. That way the vector of the original image is changed and does not resemble its actual “fingerprint” anymore. Similar vectors in the database are now similar to the “fake” fingerprint instead of the “real” fingerprint and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the original image. Since the alteration happens on a pixel level, human eyes won’t recognise an altered image when they see one, but computers get confused and won’t be able to extract content anymore.
                         
-                        <div class="social d-flex justify-content-center">
+                        <div class="mt-5 social d-flex justify-content-center">
                             <a class="mx-2" href="https://github.com/liuzrcc/pire"><i class="fab fa-github"></i></a>
                             <a class = "mx-2" href = "https://arxiv.org/pdf/1901.10332.pdf"><i class="far fa-file-alt"></i>
                                 </a>
@@ -194,14 +194,15 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 pl-5 pr-5 text-white text-align" align="justify"><section id="PERC">
-                       <h2 class="text-white mb-4 mt-4" align="center">PERC</h2>
-                        PerC alters images with respect to perceptual colour by minimizing the colour difference and maximizing the adversarial effect which is measured through misclassification. The higher the adversarial effect, the more unrecognisable an image becomes for a computer. The trick here is to make an image as unrecognisable for a computer as possible, without making it unrecognisable or “ugly” for the human eye. This distance measurement was chosen through the results of a user study that showed how far apart colours could be before changes became noticed. One of the many benefits of using PerC perturbations is that the changes in colour are less perceptible, especially in smooth regions of saturated colour. On top of that, PerC is able to hide large perturbations in the RGB space. The RGB space is the whole spectrum of colours described in proportions of red, green and blue. This game of hide and seek within the RGB space results in modifications of colours that are not readily noticeable for the human eye and alterations stay hidden for computersystems. And the best part? You can use PerC in combination with other algorithms and filters to even make it more difficult for CBIRs to infer information from your picture. 
+                    <div class="col-lg-6 pl-5 pr-5 text-white " align="justify"><section id="PERC">
+                       <h2 class="text-white" align="center">PERC</h2>
+                        PerC alters images with respect to perceptual colour by minimizing the colour difference and maximizing the adversarial effect which is measured through misclassification. The higher the adversarial effect, the more unrecognisable an image becomes for a computer. The trick is to make an image as unrecognisable for a computer as possible, without making it unrecognisable or “ugly” for the human eye. This distance measurement was chosen through the results of a user study that showed how far apart colours could be before changes became noticed. One of the many benefits of using PerC is that the changes in colour are less perceptible, especially in smooth regions of saturated colour. On top of that, PerC is able to hide large perturbations in the RGB space. This game of hide and seek within the RGB space results in modifications of colours that stay hidden for computersystems. And the best part? You can use PerC in combination with other algorithms and filters to even make it more difficult for CBIRs to infer information from your picture. 
                         
                         
                         
                         
-                        <div class="social d-flex justify-content-center">
+                        <div class=" mt-3 social d-flex justify-content-center">
+                        
                             <a class="mx-2" href="https://github.com/ZhengyuZhao/PerC-Adversarial"><i class="fab fa-github"></i>
                                 </a>
                            <a class = "mx-2" href = "https://openaccess.thecvf.com/content_CVPR_2020/papers/Zhao_Towards_Large_Yet_Imperceptible_Adversarial_Image_Perturbations_With_Perceptual_Color_CVPR_2020_paper.pdf"><i class="far fa-file-alt"></i>
