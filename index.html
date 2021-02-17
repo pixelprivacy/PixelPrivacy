@@ -29,6 +29,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#algorithms">Algorithms</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#team">Team</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -39,35 +40,34 @@
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-left">
                     <h1 class="mx-auto my-0 text-uppercase">Pixel Privacy Project</h1>
-                    <h2 class="text-white mt-5 mb-5">Using image enhancement technology to protect user privacy</h2>
+                    <h2 class="text-white mt-5 mb-5">Protecting your privacy through image enhancement.</h2>
                 </div>
             </div>
         </header>
         <!-- About section -->
-        <section class="about-section text-center bg-light mt-4"  id="about">  
-            <div class="container">
-                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify">
-                    <h2 class="text-black mb-4" align = "center">About</h2>
-                        The pixel privacy project develops image enhancement technology that helps to protect user privacy. Specifically, it is dedicated to creating new approaches that invisibly change or visibly enhance images in such a way that it is no longer possible to automatically extract privacy-sensitive information. The methods proposed, PIRE and PERC, are two algorithms that change the structure of the pixels which creates a new image. This new image won't differ semantically in the human eye, but cannot be used for purposes users did not intend on when posting the picture online. By doing so protecting the users privacy
-                    
-                    <!-- HI - IMPORTANT!!! YOU WROTE HERE: section about who started the project and where it takes place. Do we know this? or do we just let them put that in? I took the inspiration for above text from Zhuoran's github on the pixel privacy task for Mediaville. -->
-                    
+        <section class="about-section text-center bg-light mt-4" id="about">  
+            <div class="container text-justify">    
+                <h2 class="text-black mb-4 text-center">About</h2>
+                <h3 class="text-black mb-2">What do we battle?</h3>
+                <div class="about-text">
+                    In this era of social media, a lot of people post pictures online, consciously sharing their life with friends and followers. These images however can be used by content retrieval computer systems to extract data the user did not intent to share. Think of data on security systems, locations, or what colour clothing one wears frequently. <b>But how does that work?</b>
                 </div>
-                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify" >
-                    <h2 class="text-black mb-4" align="center">What do we battle?</h2>
-                    
-                                       In this era of social media, a lot of people post pictures online. Their intentions is to share their life with friends and followers. These images however can be used by content retrieval computersystems to extract data the user did not intent to share. Think of data on security systems, locations, what colour clothing one wears frequently. How does that work? Content based information retrieval systems (CBIR) accept images as an input and ask a question similar to: what do you see on this picture? The system returns a list of relevant and similar images as an answer to that question. The input image is represented in a vector that is based on the content of an image. You can consider this vector a numerical “fingerprint” of what is displayed on the image. A CBIR system then compares that vector to content based vectors of other images in a database and selects the most similar vectors as images that have something similar or something to do with the original image. An example: you post a picture of yourself in front of the Stevens Church in Nijmegen, wearing a red dress at noon. The CBIR takes that as input, asks the question: what do you see on this picture. It compares the fingerprints of the picture with images in its database, returning a list of pictures from the Sint Stevens church, Nijmegen, red dresses and lunchtime. Before you know it, the system shows you advertisements of lunchrooms in Nijmegen close to the Sint Stevens church and advices you to wear a red dress to another meeting. Not really what you expected from posting the "innocent" instagram picture. 
-                    
-                     
-                    <!-- HI - IMPORTANT!!! YOU WROTE HERE: section about who started the project and where it takes place. Do we know this? or do we just let them put that in? I took the inspiration for above text from Zhuoran's github on the pixel privacy task for Mediaville. Also, I added an example on the red dress (Matrix reference :p ) let me know what you think  -->
-                    
+                <br>
+                <div class="about-text">
+                    ontent based information retrieval systems (CBIR) accept images as an input and ask a question similar to "what do you see on this picture?". The system then returns a list of relevant and similar images as an answer. The input image is represented in a vector that is based on its content. This vector can be considered as a numerical “fingerprint” of what is displayed on the image. A CBIR system then compares said vector to vectors of other images in a database and obtains the most similar image.
                 </div>
+                <br>
+                <div class="about-text">
+                    <b>Here is an example:</b> you post a picture on Instagram of yourself in front of Saint Stephen's Church in Nijmegen wearing a red dress at noon. The CBIR takes that as input and asks the question "what do you see on this picture?". After comparing the fingerprints of the picture with others fingerprints in its database, it returns a list of pictures from Saint Stephen's Church, Nijmegen, red dresses, and lunchtime. Before you know it, the system shows you advertisements of lunchrooms in Nijmegen close to the Saint Stephen's Church and suggests you to wear a red dress to your next event. Not really what you expected from posting an "innocent" Instagram picture, right?
+                </div>
+
+                <h3 class="text-black mb-2 mt-4">What do we do?</h3>
+                The Pixel Privacy project develops image enhancement technology that helps protecting online user privacy. Specifically, it is dedicated to creating new approaches that invisibly change or visibly enhance images in such ways that it is no longer possible to automatically extract privacy-sensitive information. The methods proposed, PIRE and PerC, are two algorithms that change the structure of the pixels, creating this way a new image. This new image won't differ semantically for the human eye, but cannot be used for purposes users did not intend on when posting the picture online. 
                 
-                <div class="col-lg-8 mx-auto mb-4 mt-4" align="justify" >
-                    <h2 class="text-black mb-4" align="center">The website</h2>
-                        On this website you can find examples of the beautiful images we created using image enhancement techniques that also assure user privacy. You can wander around the gallery and be amazed by the beautiful pictures. If you got curious to how we did it, you can have a look at the algorithms page. We described the mechanisms behind each filter using understandable language. And if you really want to dive deep and explore the technical details, you can find links to the published papers on each algorithm and the github repository where you can study the code. In the contact section you can find who to contact if you have questions, want a collaboration or want to have a nice chat on this topic!  
-                </div>
-                <!-- Map -->
+                <h3 class="text-black mb-2 mt-4">What is this website for?</h3>
+                On this website you can find examples of the beautiful images we created using image enhancement techniques that also assure user privacy. You can wander around the gallery and be amazed by the beautiful pictures. If you got curious to how we did it, you can have a look at the algorithms page. We described the mechanisms behind each filter using understandable language. And if you really want to dive deep and explore the technical details, you can find links to the published papers on each algorithm and the github repository where you can study the code. In the contact section you can find who to contact if you have questions, want a collaboration or want to have a nice chat on this topic!
+
+                <!-- Map 
                 <div id="map">
                     <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
                         <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
@@ -88,6 +88,7 @@
                         <a href="https://1map.com/nl/map-embed">1 Map</a>
                     </div>
                 </div>
+                -->
             </div>
         </section>
         <!-- Gallery-->
@@ -96,8 +97,8 @@
                 <div class="col-lg-8 mx-auto">
                     <h2 class="text-black mb-4 mt-4">Gallery</h2>
                         <a href="/Website/gallery.html">Our gallery</a>
-                        contains a large amount of photos processed by all the algorithms used
-                        in this project. It is very nice go visit please.
+                        contains a large amount of photos processed by the algorithms used
+                        in this project.
                 </div>
                 <div class="row no-gutters mt-5">
                     <div class="col-lg-6">
@@ -165,6 +166,22 @@
                         </div>
                     </div>
                 </div>-->
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mt-5 mb-5 mb-lg-0">
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
+                    <div class="col-lg-6">
+                        <div class="text-center h-100 project">
+                            <div class="d-flex h-100 pl-5">
+                                <div class="project-text-right w-100 my-auto text-lg-left">
+                                    <a href="/Website/algorithms.html#PIRE" style="text-decoration: none">
+                                        <h4 class="text-black">PIRE</h4>
+                                        <p class="mb-0 text-black-50">PIRE changes the "fingerprint" of an image so that a CBIR cannot use it to find similar images. Click here to find out more.</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project Two Row-->
                 <div class="row justify-content-center no-gutters">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="" /></div>
@@ -172,24 +189,118 @@
                         <div class="text-center h-100 project">
                             <div class="d-flex h-100 pr-5">
                                 <div class="project-text-left w-100 my-auto text-lg-right">
-                                    <a href="/algorithms.html#PIRE" style="text-decoration: none">
-                                        <h4 class="text-black">PIRE</h4>
-                                        <p class="mb-0 text-black-50">PIRE changes the images "fingerprint" so a CBIR cannot use that fingerprint to find similar images. Click to find out more!</p>
+                                    <a href="/Website/algorithms.html#PERC" style="text-decoration: none">
+                                        <h4 class="text-black">PERC</h4>
+                                        <p class="mb-0 text-black-50">PerC alters images with respect to the perceptual color so that the image looks the same to the human eye but different to a CBIR. Click here to find out more.</p>
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center no-gutters mt-5 mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="text-center h-100 project">
-                            <div class="d-flex h-100 pl-5">
-                                <div class="project-text-right w-100 my-auto text-lg-left">
-                                    <a href="/algorithms.html#PERC" style="text-decoration: none">
-                                        <h4 class="text-black">PERC</h4>
-                                        <p class="mb-0 text-black-50">PerC alters images with respect to the perceptual colour so the image looks the same to humans but different to a CBIR. Click here to find out more! </p>
+            </div>
+        </section>
+        <!-- Team -->
+        <section class="team-section bg-light" id="team">
+            <div class="container">
+                <h2 class="text-black mb-4 text-center">Team</h2>
+                This project is the outcome of a wonderful collaboration of very nice and gentle people who work very passionately to make the current digital and social world a better place to share, communicate, and live.
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Martha Larson</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        m.larson@cs.ru.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Zhuoran Liu</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        z.liu@cs.ru.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Whoever this is</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        whatever@email.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5 mt-5">
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Whoever this is</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        whatever@email.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Whoever this is</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        whatever@email.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Whoever this is</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        whatever@email.nl <br>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mb-3 mb-md-0">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h4 class="m-2">Whoever this is</h4>
+                                <hr class="my-3" />
+                                <div class="small text-black-50">
+                                    <a>
+                                        <i>Position</i> <br>
+                                        whatever@email.nl <br>
                                     </a>
                                 </div>
                             </div>
@@ -207,19 +318,22 @@
                         <h2 class="text-white mb-5">Want to contact us? </h2>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mt-5 mb-5">
                     <div class="col-md-6 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-envelope fa-2x text-primary mb-2"></i>
                                 <h4 class="text-uppercase m-2">Email</h4>
                                 <hr class="my-3" />
-                                <div class="small text-black-50"><a>
-                                    Martha Larson <br>
-                                    m.larson@cs.ru.nl <br>
-                                    Institute for Computing and Information Sciences, Faculty of Science <br>
-                                    Radboud University <br>
-                                    Nijmegen, Netherlands</a></div>
+                                <div class="small text-black-50">
+                                    <a>
+                                        Martha Larson <br>
+                                        m.larson@cs.ru.nl <br>
+                                        Center for Language Studies <br>
+                                        Institute for Computing and Information Sciences <br>
+                                        Radboud University <br>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -238,17 +352,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <!-- <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a> --> 
-                    <!-- <a class="mx-2" href="https://www.youtube.com/watch?v=zShHPVOA070"><i class="fab fa-youtube"></i></a> -->
-                    <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
-                </div>
                 <!-- Footer-->  
-                <div class="footer small text-center text-white">
+                <div class="footer small text-center text-white mt-5 mb-5">
                     <div>Copyright © Pixel Privacy Project 2021</div>
                 </div>
                 <div class="text-white text-right small">
-                    Image by Manuchi on <u><a href="https://pixabay.com/illustrations/color-triangle-geometric-textured-2174045/" style="color: #fff">Pixabay</a></u>.
+                    Image by Manuchi on <u><a href="https://pixabay.com/illustrations/color-triangle-geometric-textured-2174045/" style="color: #fff">Pixabay</a></u>
                 </div>
             </div>
         </section>

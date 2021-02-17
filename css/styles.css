@@ -10332,6 +10332,14 @@ body {
   }
 }
 
+.team-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 75%, rgba(255, 255, 255, 0.8) 100%, #000000 100%);*/
+}
+.team-section p {
+  margin-bottom: 5rem;
+}
 
 .about-section {
   padding-top: 3rem;
@@ -10377,7 +10385,7 @@ body {
 }
 
 .contact-section {
-  padding-top: 5rem;
+  padding-top: 7rem;
   background-image: url(../assets/img/bg-masthead.png);
 }
 .contact-section .card {
@@ -10527,3 +10535,12 @@ body {
   100% {
     width: 50%;
   }
+    
+.about-text{
+    margin-bottom: 3cm;
+}
+    
+.icon-algo {
+  margin-top: 5rem;
+  color: white;
+}
