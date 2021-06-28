@@ -162,11 +162,11 @@
                 <div class="row no-gutters mt-5">
                     <div class="col-lg-6 pl-5 pr-5 text-white" align="justify"><section id="PIRE">
                        <h2 class="text-white mb-4 mt-4" align="center">PIRE</h2>
-                       Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the process of vector comparisons by altering the pixels of the original image. That way the vector of the original image is changed and does not resemble its actual “fingerprint” anymore. Similar vectors in the database are now similar to the “fake” fingerprint instead of the “real” fingerprint and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the original image. Since the alteration happens on a pixel level, human eyes won’t recognise an altered image when they see one, but computers get confused and won’t be able to extract content anymore.
+                       Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the similarity search by altering the pixels of the original image. That way the vector of the original image is changed and does not resemble its actual "feature vector" (or "fingerprint")  anymore. Similar vectors in the database are now similar to the “fake” feature vector instead of the “real” feature vector and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the query image. Since the alteration happens on a pixel level, human eyes can recognize the image content, but computers get confused and won’t be able to extract content anymore.
                         
                         <div class="mt-5 icon-algo d-flex justify-content-center">
                             <a class="mx-4" href="https://github.com/liuzrcc/pire" target="_blank"><i class="fab fa-github fa-2x" style="color:#ffffff"></i></a>
-                            <a class="mx-4" href="https://arxiv.org/pdf/1901.10332.pdf" target="_blank"><i class="far fa-file-alt fa-2x" style="color:#ffffff"></i></a>
+                            <a class="mx-4" href="https://dl.acm.org/doi/abs/10.1145/3323873.3325052" target="_blank"><i class="far fa-file-alt fa-2x" style="color:#ffffff"></i></a>
                         </div>
                         </section>
                     </div>
@@ -175,10 +175,10 @@
                     <div class="col-lg-6">
                         <div class="img-comp-container">
                           <div class="img-comp-img">
-                            <img src="assets/img/gallery_0.jpg" width="600" height="600">
+                            <img src="assets/img/pire.png" width="600" height="600">
                           </div>
                           <div class="img-comp-img img-comp-overlay">
-                            <img src="assets/img/gallery_0_edit.jpg" width="600" height="600">
+                            <img src="assets/img/pire_edit.png" width="600" height="600">
                           </div>
                         </div>
                         
