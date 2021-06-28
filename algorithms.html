@@ -198,8 +198,7 @@
                     </div>
                     <div class="col-lg-6 pl-5 pr-5 text-white " align="justify"><section id="PerC">
                        <h2 class="text-white" align="center">PerC</h2>
-                        PerC alters images with respect to perceptual colour by minimizing the colour difference and maximizing the adversarial effect which is measured through misclassification. The higher the adversarial effect, the more unrecognisable an image becomes for a computer. The trick is to make an image as unrecognisable for a computer as possible, without making it unrecognisable or “ugly” for the human eye. This distance measurement was chosen through the results of a user study that showed how far apart colours could be before changes became noticed. One of the many benefits of using PerC is that the changes in colour are less perceptible, especially in smooth regions of saturated colour. On top of that, PerC is able to hide large perturbations in the RGB space. This game of hide and seek within the RGB space results in modifications of colours that stay hidden for computersystems. And the best part? You can use PerC in combination with other algorithms and filters to even make it more difficult for CBIRs to infer information from your picture. 
-                        
+						PerC is designed to make the filtered images look more similar to their original versions, while maintaining the protection effects. This is achieved by using perceptual color distance (CIEDE2000) to prioritize the pixels on which the color changes are less sensitive to the human eye. The resulting images with large yet imperceptible changes also gain higher robustness against practical image processing operations, such as compression.                        
                         
                         
                         
