@@ -162,7 +162,7 @@
                 <div class="row no-gutters mt-5">
                     <div class="col-lg-6 pl-5 pr-5 text-white" align="justify"><section id="PIRE">
                        <h2 class="text-white mb-4 mt-4" align="center">PIRE</h2>
-                       Perturbations for Image Retrieval Error (PIRE) is an approach to battle automatic content retrieval from images by CBIRs. PIRE prevents the similarity search by altering the pixels of the original image. That way the vector of the original image is changed and does not resemble its actual "feature vector" (or "fingerprint")  anymore. Similar vectors in the database are now similar to the “fake” feature vector instead of the “real” feature vector and show images that don’t have anything to do with the original picture. This results in a CBIR returning a list of images that are completely different from the query image. Since the alteration happens on a pixel level, human eyes can recognize the image content, but computers get confused and won’t be able to extract content anymore.
+                       Perturbations for Image Retrieval Error (PIRE) is an approach to fooling automatic Content-Based Image Retrieval (CBIR) systems. PIRE prevents the similarity search by filtering the query image at pixel level. That way the feature vector of the query image is changed to not resemble its actual semantics so that the CBIR returns a list of images that are completely different from the query image. Since the filtering happens at pixel level, it will not impact the interpretation of the image content by the human eye. 
                         
                         <div class="mt-5 icon-algo d-flex justify-content-center">
                             <a class="mx-4" href="https://github.com/liuzrcc/pire" target="_blank"><i class="fab fa-github fa-2x" style="color:#ffffff"></i></a>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="col-lg-6 pl-5 pr-5 text-white " align="justify"><section id="PerC">
                        <h2 class="text-white" align="center">PerC</h2>
-						PerC is designed to make the filtered images look more similar to their original versions, while maintaining the protection effects. This is achieved by using perceptual color distance (CIEDE2000) to prioritize the pixels on which the color changes are less sensitive to the human eye. The resulting images with large yet imperceptible changes also gain higher robustness against practical image processing operations, such as compression.                        
+						PerC is designed to further make the filtered images more distinguishable from their original versions, without sacrificing the protection effects. This is achieved by using perceptual color distance (CIEDE2000) to prioritize the filtering operations on pixels where the color change are less sensitive to the human eye. The resulting images with large yet imperceptible changes also gain higher robustness against practical image processing operations, such as compression.                        
                         
                         
                         
@@ -217,7 +217,7 @@
                 <div class="row no-gutters mt-5">
                     <div class="col-lg-6 pl-5 pr-5 text-white" align="justify"><section id="Logit">
                        <h2 class="text-white mb-4 mt-4" align="center">Logit</h2>
-						In realistic scenarios, it is almost impossible to access the technical details of specific malicious information extraction algorithms. Logit is specifically designed to address this by also securing substantial protection against unknown algorithms. The merit of logit is that it does not need intensive resources that are necessary for other related solutions.                        
+						In realistic scenarios, it is almost impossible to access the technical details of specific malicious information extraction systems. Logit is specifically designed to address this by also securing substantial protection against systems that are hard to access during designing the filters. The merit of logit is that it does not need intensive resources that are necessary for other related solutions.                        
                         <div class="mt-5 icon-algo d-flex justify-content-center">
                             <a class="mx-4" href="https://github.com/ZhengyuZhao/Targeted-Tansfer" target="_blank"><i class="fab fa-github fa-2x" style="color:#ffffff"></i></a>
                             <a class="mx-4" href="https://arxiv.org/abs/2012.11207" target="_blank"><i class="far fa-file-alt fa-2x" style="color:#ffffff"></i></a>
